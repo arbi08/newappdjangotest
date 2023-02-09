@@ -1,0 +1,21 @@
+python -> basic => function (def {return , void}), class 
+virtualenv : pip install virtualenv -> virtualenv venv or python -m venv venv -> venv Scripts\activate.bat
+pip install django
+django-admin startproject project .
+python manage.py runserver
+python  manage.py  makemigrations
+python  manage.py  migrate
+django-admin startapp etudiant
+
+
+//views
+# from django.http import HttpResponse
+# def index(request):
+#     return HttpResponse("hello")
+
+
+//url 
+<a href="{% url 'etudiants:index' %}">home</a>
+
+
+ py manage.py createsuperuser
